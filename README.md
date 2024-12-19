@@ -261,3 +261,56 @@ HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (main)
 $ git reset --hard
 HEAD is now at 039b94b setup the home and about page
 ```
+# Bundle 2 Exercise 1
+```bash
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (main)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (ft/bundle-2)
+$ git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        service.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (ft/bundle-2)
+$ git add service.html
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (ft/bundle-2)
+$ git commit -m "create service page"
+[ft/bundle-2 486dd91] create service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 service.html
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (ft/bundle-2)
+$ git push
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@UDO MINGW64 ~/Documents/vs code/theGym/Git exercise solution (ft/bundle-2)
+$ git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 453 bytes | 453.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/oparap8/git-exercises/pull/new/ft/bundle-2
+remote:
+To https://github.com/oparap8/git-exercises.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+```
